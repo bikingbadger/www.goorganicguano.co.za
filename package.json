@@ -1,0 +1,37 @@
+{
+  "name": "www.goorganicguano.co.za",
+  "version": "1.0.0",
+  "description": "Go Organics Guano",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm-run-all --parallel bundle:*",
+    "bundle:eleventy": "eleventy --serve --quiet",
+    "bundle:tailwind": "parcel src/assets/css/* --out-dir dist/assets/css", 
+    "bundle:img": "parcel src/assets/img/* --out-dir dist/assets/img",       
+    "build": "npm-run-all --parallel prod:*",
+    "prod:eleventy": "eleventy",
+    "prod:tailwind": "parcel build src/assets/css/* --out-dir dist/assets/css",
+    "prod:img": "parcel src/assets/img/* --out-dir dist/assets/img"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikingbadger/www.goorganicguano.co.za.git"
+  },
+  "keywords": [],
+  "author": "Hilton Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bikingbadger/www.goorganicguano.co.za/issues"
+  },
+  "homepage": "https://github.com/bikingbadger/www.goorganicguano.co.za#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.2",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.4",
+    "postcss": "^7.0.32",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^1.8.4"
+  }
+}
