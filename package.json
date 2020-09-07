@@ -6,10 +6,12 @@
   "scripts": {
     "serve": "npm-run-all --parallel bundle:*",
     "bundle:eleventy": "eleventy --serve --quiet",
-    "bundle:tailwind": "parcel src/assets/css/* --out-dir dist/assets/css",    
+    "bundle:tailwind": "parcel src/assets/css/* --out-dir dist/assets/css", 
+    "bundle:img": "parcel src/assets/img/* --out-dir dist/assets/img",       
     "build": "npm-run-all --parallel prod:*",
     "prod:eleventy": "eleventy",
-    "prod:tailwind": "parcel build src/assets/css/* --out-dir dist/assets/css"
+    "prod:tailwind": "parcel build src/assets/css/* --out-dir dist/assets/css",
+    "prod:img": "parcel src/assets/img/* --out-dir dist/assets/img"
   },
   "repository": {
     "type": "git",
