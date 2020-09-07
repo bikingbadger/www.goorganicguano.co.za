@@ -1,0 +1,24 @@
+{
+  "name": "www.goorganicguano.co.za",
+  "version": "1.0.0",
+  "description": "Go Organics Guano",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikingbadger/www.goorganicguano.co.za.git"
+  },
+  "keywords": [],
+  "author": "Hilton Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bikingbadger/www.goorganicguano.co.za/issues"
+  },
+  "homepage": "https://github.com/bikingbadger/www.goorganicguano.co.za#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
