@@ -11,10 +11,10 @@
         <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/>
     </head>
 
-    <body class="container mx-auto">
+    <body class="container mx-auto bg-gray-200">
         <header>
-            <img src="/assets/img/logo.png" alt="Go Organics">
-            <div>
+            <img class="p-6" src="/assets/img/logo.png" alt="Go Organics">
+            <div class="bg-tangerine-500 p-2 rounded grid grid-flow-col">
                 {%- for nav in collections.nav -%}
                     <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a><br/>
                 {%- endfor -%}
