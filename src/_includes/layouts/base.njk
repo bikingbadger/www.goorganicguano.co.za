@@ -7,10 +7,11 @@
             {{ renderData.title or title or metadata.title}}
         </title>
         <meta name="Description" content=""/>
-        <link rel="stylesheet" href="/assets/tailwind.css"/>
+        <base href="/">
+        <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/>
     </head>
 
-    <body>
+    <body class="container mx-auto">
         <header>
             <h1>{{ metadata.title }}</h1>
             <div>
