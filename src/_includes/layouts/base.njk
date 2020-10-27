@@ -22,18 +22,28 @@
         <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/>
     </head>
 
-    <body class="bg-organic-500 font-serif">
+    {# <body class="bg-organic-500 font-serif">
         <header class="bg-organic-200">
             <img class="p-6 w-2/3 mx-auto" src="/assets/img/banner.png" alt="Go Organics">
             <div class="bg-organic-500 p-2 text-organic-200 uppercase">
                 <div class="p-6 w-2/3 mx-auto grid md:grid-flow-col justify-items-center">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> #}
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        {# <header>
+            <img src="/assets/img/banner.png" alt="Go Organics">
+            <div>
+                <div>
                     {%- for nav in collections.nav -%}
-                        <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a><br/>
+                        <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
                     {%- endfor -%}
                 </div>
             </div>
-        </header>
-        <main class="container mx-auto bg-gray-200">
+        </header> #}
+        <main>
             {{ content | safe }}
         </main>
     </body>
