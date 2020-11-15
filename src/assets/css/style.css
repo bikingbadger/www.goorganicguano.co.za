@@ -8,37 +8,48 @@ body {
   font-family: 'Archivo', sans-serif;
 }
 
-.top-banner-section {
+main {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100vh;
+  grid-template-columns: 1fr 70vw 1fr;
+  /* grid-template-rows: 30vh, 70vh; */
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-content: center;
   justify-content: center;
 }
 
-.top-banner-section .navigation-div {
-  grid-area: 1 / 1 / 2 / 2;
+main .gradient {
+  grid-area: 1 / 1 / 2 / 4;
+}
+main .banner-image-div {
+  grid-area: 1 / 1 / 2 / 4;
+}
+main .banner-text-div {
+  grid-area: 1 / 1 / 2 / 4;
 }
 
-.top-banner-section .gradient {
-  grid-area: 1 / 1 / 2 / 2;
+main .navigation-div {
+  grid-area: 1 / 1 / 2 / 4;
 }
-.top-banner-section .banner-image-div {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.top-banner-section .banner-text-div {
-  grid-area: 1 / 1 / 2 / 2;
+
+main .content {
+  grid-area: 2 / 2 / 2 / 3;
+  max-width: 75ch;
+  padding-top: 5rem;
+  display: grid;
+  justify-self: center;
+  font-size: 1.5rem;
+  line-height: 1.75;
 }
 
 .navigation-div {
   display: grid;
   grid-auto-flow: column;
   width: 70%;
+  align-self: flex-start;
   justify-self: center;
-  padding-top: 5vh;
-  max-height: 2rem;
+  /* padding-top: 5vh; */
+  /* max-height: 2rem; */
 }
 
 .banner-image {
@@ -99,7 +110,6 @@ h1 {
 }
 
 .banner-header .banner-header-highlight {
-  
   position: absolute;
   top: 0;
   left: 0;
@@ -116,7 +126,6 @@ h1 {
   opacity: 1;
 }
 
-
 .banner-body-text {
   font-size: 2rem;
   color: hsla(143, 46%, 19%, 0.8);
@@ -125,7 +134,6 @@ h1 {
 
 .banner-btn {
   margin-top: 1em;
-  
 }
 
 .banner-btn-item {
@@ -135,11 +143,11 @@ h1 {
   padding-left: calc(0.5em + 0.08vw);
   padding-right: calc(0.5em + 0.08vw);
   color: hsla(143, 46%, 19%, 1);
-  background-color: hsla(22, 73%, 51%, .5);
+  background-color: hsla(22, 73%, 51%, 0.5);
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  border: 1px solid hsla(22, 73%, 51%, .5);
+  border: 1px solid hsla(22, 73%, 51%, 0.5);
   border-radius: 5px;
   transition: background-color 0.3s linear;
 }

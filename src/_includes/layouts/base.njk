@@ -33,18 +33,16 @@
     </head>
 
     <body>
-        {# <header>
-            <img src="/assets/img/banner.png" alt="Go Organics">
-            <div>
-                <div>
+        <main>
+            <div class="navigation-div">
+                <img class="icon" src="assets/img/icon.png" alt="Icon"/>
+                <div class="nav-items">
                     {%- for nav in collections.nav -%}
                         <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
                     {%- endfor -%}
                 </div>
             </div>
-        </header> #}
-        <main>
-            {{ content | safe }}
+            <div class="content">{{ content | safe }}</div>
         </main>
     </body>
 </html>

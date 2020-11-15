@@ -1,33 +1,31 @@
 ---
 title: Go Organic
-layout: layouts/base.njk
+layout: layouts/home.njk
 tags:
   - nav
 navtitle: Home
 date: 2000-01-01
 ---
-<section class="top-banner-section">
-  <div class="banner-image-div">
-    <img class="banner-image" src="assets/img/person holding green grass.jpg" alt="Banner Image"/>
-  </div>
-  <div class="gradient"></div>
-  <div class="banner-text-div">
-    <span class="banner-text">
-      <div >
-        <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
-        <p class="banner-body-text">natural seabird guano</p>
-        <p class="banner-btn">
-          <a class="banner-btn-item" href="/about">Learn more</a>
-        </p>
-      </div>
-    </span>
-  </div>
-  <div class="navigation-div">
-    <img class="icon" src="assets/img/icon.png" alt="Icon"/>
-    <div class="nav-items">
-      {%- for nav in collections.nav -%}
-        <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
-      {%- endfor -%}
+<div class="banner-image-div">
+  <img class="banner-image" src="assets/img/person holding green grass.jpg" alt="Banner Image"/>
+</div>
+<div class="gradient"></div>
+<div class="banner-text-div">
+  <span class="banner-text">
+    <div >
+      <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
+      <p class="banner-body-text">natural seabird guano</p>
+      <p class="banner-btn">
+        <a class="banner-btn-item" href="/about">Learn more</a>
+      </p>
     </div>
+  </span>
+</div>
+<div class="navigation-div">
+  <img class="icon" src="assets/img/icon.png" alt="Icon"/>
+  <div class="nav-items">
+    {%- for nav in collections.nav -%}
+      <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+    {%- endfor -%}
   </div>
-</section>
+</div>
