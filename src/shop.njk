@@ -1,0 +1,59 @@
+---
+title: Shop
+layout: layouts/base.njk
+tags:
+  - nav
+navtitle: Shop
+date: 2000-01-02
+---
+<form name="order" method="POST" data-netlify="true">
+
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+    <div class="grid content-start border-2 border-organic-500 rounded shadow-lg" style="grid-template-rows: 1fr 3fr 1fr 1fr">
+      <h2 class="px-16 py-2 leading-7 text-center">Go Organic Guano Liquid 2 Liter</h2>
+      <div class="px-16 py-8 leading-7">Go Organic Guano fertilizer is sold, and retailed in a handy 2 litre bottle and contains oodles of trace minerals as well as all the usual N-P-K standards you're used to. You get all the benefits of regular fertilizer with this organic fertilizer plus micronutrients and it adds lots of biological activity to your soil you just can't get any other way. 2 Litres of  Go Organic Guano makes 80 litres of plant food which covers 800 m2.</div>
+      <div class="px-16 py-2 leading-7 text-2xl font-semibold grid justify-center">
+        <div class="text-center bg-organic-500 text-white rounded-full w-20 h-20 pt-6">R50</div>
+      </div>
+      <div class="px-16 py-2 leading-7">
+        <label>Quantity: <input class= "p-1 w-full" type="number" name="2-liter-qty"/></label>
+      </div>
+    </div>
+    <div class="grid content-start border-2 border-organic-500 rounded shadow-lg" style="grid-template-rows: 1fr 3fr 1fr 1fr">
+      <h2 class="px-16 py-2 leading-7 text-center">Go Organic Guano Liquid 25 Liter</h2>
+      <div class="px-16 py-8 leading-7">25 litre of Go Organic Guano makes a 1,000 litres of plant food that covers 1 hectare (1:40 dilute) </div>
+      <div class="px-16 py-2 leading-7 text-2xl font-semibold grid justify-center">
+        <div class="text-center bg-organic-500 text-white rounded-full w-20 h-20 pt-6">R150</div>
+      </div>
+      <div class="px-16 py-2 leading-7">
+        <label>Quantity: <input class= "p-1 w-full" type="number" name="25-liter-qty"/></label>
+      </div>
+    </div>
+    <div class="grid content-start border-2 border-organic-500 rounded shadow-lg" style="grid-template-rows: 1fr 3fr 1fr 1fr">
+      <h2 class="px-16 py-2 leading-7 text-center">Go Organic Natural Seabird Guano Tablets</h2>
+      <div class="px-16 py-8 leading-7">Its a compressed organic fertilizer in a convenient tablet form. This product can be applied for the general feeding of potplants, young trees, shrubs and mature trees. It is available in containers of 10's or any other quantities (bulk). Organic fertilizers provide a slow release of nutrients to plants.</div>
+      <div class="px-16 py-2 leading-7 text-2xl font-semibold grid justify-center">
+        <div class="text-center bg-organic-500 text-white rounded-full w-20 h-20 pt-6">R100</div>
+      </div>
+      <div class="px-16 py-2 leading-7">
+        <label>Quantity: <input class= "p-1 w-full" type="number" name="tablets-qty"/></label>
+      </div>
+    </div>
+  </section>
+  <p class="px-16 py-2 leading-7">
+    <label>Your Name: <input class= "p-1 w-full" type="text" name="name"/></label>
+  </p>
+  <p class="px-16 py-2 leading-7">
+    <label>Your Email: <input class= "p-1 w-full" type="email" name="email"/></label>
+  </p>
+  <p class="px-16 py-2 leading-7">
+    <label>Your Phone: <input class= "p-1 w-full" type="phone" name="phone"/></label>
+  </p>
+  <p class="px-16 py-2 leading-7">
+    <label>Message: <textarea class= "p-1 w-full" name="message"></textarea>
+    </label>
+  </p>
+  <p class="px-16 py-2 leading-7">
+    <button class="bg-organic-500 hover:bg-organic-700 text-white font-bold py-2 px-4 rounded" type="submit">Order</button>
+  </p>
+</form>
