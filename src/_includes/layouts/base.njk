@@ -19,7 +19,7 @@
 
             gtag('config', 'G-6FRVNB8CCG');
         </script>
-        <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/>
+        {# <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/> #}
     </head>
 
     {# <body class="bg-organic-500 font-serif">
@@ -29,20 +29,24 @@
                 <div class="p-6 w-2/3 mx-auto grid md:grid-flow-col justify-items-center">
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> #}
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <body>
-        <main>
-            <div class="navigation-div">
-                <img class="icon" src="assets/img/icon.png" alt="Icon"/>
-                <div class="nav-items">
-                    {%- for nav in collections.nav -%}
-                        <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
-                    {%- endfor -%}
-                </div>
+<body>
+    <main>
+        <div class="navigation-div">
+            <img class="icon" src="assets/img/icon.png" alt="Icon"/>
+            <div class="nav-items">
+                {%- for nav in collections.nav -%}
+                    <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+                {%- endfor -%}
             </div>
-            <div class="content">{{ content | safe }}</div>
-        </main>
-    </body>
+        </div>
+        <div class="content">{{ content | safe }}</div>
+    </main>
+    <footer>
+        <p><strong>Email:</strong> <a href="mailto:info@goorganicguano.co.za">info@goorganicguano.co.za</a></p>
+        <p><strong>Customer care:</strong> <span>079 630 5841</span> or <span>082 418 8672</span></p>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,30 @@
+---
+title: Contact
+layout: layouts/base.njk
+tags:
+- nav
+navtitle: Contact
+date: 2000-01-05
+---
+<form name="order" method="POST" data-netlify="true">
+    <p >
+        <label>Your Name <input type="text" name="name" required/></label>
+    </p>
+    <p >
+        <label>Your Email <input type="email" name="email"/></label>
+    </p>
+    <p >
+        <label>Your Phone <input type="phone" name="phone" required/></label>
+    </p>
+    <p >
+        <label>Message <textarea name="message"></textarea>
+        </label>
+    </p>
+    <p >
+        <input type="checkbox" name="newsletter" id="newsletter"> Join our newsletter
+ </p>
+    <p >
+        <button type="submit">Submit</button>
+    </p>
+
+</form>
