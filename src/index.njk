@@ -7,12 +7,14 @@ navtitle: Home
 date: 2000-01-01
 ---
 <div class="banner-image-div">
-  <img class="banner-image" src="assets/img/person holding green grass.jpg" alt="Banner Image"/>
+{# src="assets/img/person holding green grass.jpg" #}
+  <img class="banner-image" src="assets/img/penguin-portrait.jpg" alt="Banner Image"/>
 </div>
 <div class="gradient"></div>
 <div class="banner-text-div">
   <span class="banner-text">
     <div >
+      <img class="banner-icon" src="assets/img/icon.png" alt="Icon"/>
       <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
       <p class="banner-body-text">natural seabird guano</p>
       <p>The original seabird guano since 2009</p>
@@ -21,12 +23,4 @@ date: 2000-01-01
       </p>
     </div>
   </span>
-</div>
-<div class="navigation-div">
-  <img class="icon" src="assets/img/icon.png" alt="Icon"/>
-  <div class="nav-items">
-    {%- for nav in collections.nav -%}
-      <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
-    {%- endfor -%}
-  </div>
 </div>
