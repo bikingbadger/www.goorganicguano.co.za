@@ -7,24 +7,29 @@ navtitle: Contact
 date: 2000-01-05
 ---
 <form name="order" method="POST" data-netlify="true">
-    <p >
-        <label>Your Name <input type="text" name="name" required/></label>
-    </p>
-    <p >
-        <label>Your Email <input type="email" name="email"/></label>
-    </p>
-    <p >
-        <label>Your Phone <input type="phone" name="phone" required/></label>
-    </p>
-    <p >
-        <label>Message <textarea name="message"></textarea>
-        </label>
-    </p>
-    <p >
-        <input type="checkbox" name="newsletter" id="newsletter"> Join our newsletter
- </p>
-    <p >
-        <button type="submit">Submit</button>
-    </p>
-
+    <h2>Your Details</h2>
+    <section class="user-form">
+        <div class="user-form-field">
+            <label>Your Name </label>
+            <input type="text" name="name" required/>
+        </div>
+        <div class="user-form-field">
+            <label>Your Email </label>
+            <input type="email" name="email"/>
+        </div>
+        <div class="user-form-field">
+            <label>Your Phone</label>
+            <input type="phone" name="phone" required/>
+        </div>
+        <div class="user-form-field">
+            <label>Message</label>
+            <textarea name="message" rows="4"></textarea>
+        </div>
+        <div >
+            <input type="checkbox" name="join" id="join">
+            <label>Join our mailing list </label>
+        </div>
+  </p>
+    </section>
+    <button type="submit">Order</button>
 </form>

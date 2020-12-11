@@ -19,6 +19,7 @@ main {
 main .gradient {
   grid-area: 1 / 1 / 2 / 4;
 }
+
 main .banner-image-div {
   grid-area: 1 / 1 / 2 / 4;
 }
@@ -33,6 +34,7 @@ main .content {
   justify-self: center;
   line-height: 1.75;
   padding-top: 1rem;
+  width: 100%;
 }
 
 .navigation-div {
@@ -48,8 +50,7 @@ main .content {
   object-fit: cover;
 }
 
-.banner-icon
- {
+.banner-icon {
   max-width: 5rem;
 }
 
@@ -172,6 +173,60 @@ ul {
   list-style-position: inside;
 }
 
+.products {
+  border: 1px solid hsla(143, 46%, 19%, 1);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.product-card {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.user-form {
+  display: grid;
+  border: 1px solid hsla(143, 46%, 19%, 1);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 50%;
+}
+
+.user-form-field {
+  display: grid;
+  
+}
+
+input[type="checkbox"] {
+  margin: 0 auto;
+}
+
+label {
+  line-height: 1.5rem;
+  font-size: inherit;
+}
+
+input,
+textarea {
+  border: 1px solid hsla(143, 46%, 19%, 1);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  font-size: inherit;
+}
+
+button {
+  background-color: hsla(143, 46%, 19%, 1);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-size: inherit;
+}
+
 footer {
   font-size: 0.75rem;
   text-align: center;
@@ -242,7 +297,7 @@ footer {
     grid-auto-flow: column;
     align-items: center;
   }
-  
+
   .logo h1 {
     font-size: 5rem;
   }

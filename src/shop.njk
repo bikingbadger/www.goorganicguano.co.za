@@ -8,55 +8,90 @@ date: 2000-01-03
 ---
 <form name="order" method="POST" data-netlify="true">
 
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
-    <div class="grid content-start border-2 border-organic-500 rounded shadow-lg  py-4 px-16" style="grid-template-rows: 1fr 2fr 1fr 1fr">
-      <h2 class="text-center">Go Organic Guano Liquid 2 Liter</h2>
-      <div class="leading-8">A handy 2 litre bottle makes 80 litres of plant food which covers 800 m2.</div>
-      <div class="text-2xl font-semibold grid justify-center">
-        <div class="text-center bg-organic-500 text-white rounded-full w-20 h-20 pt-6">R50</div>
-      </div>
-      <div class="leading-7">
-        <label>Quantity: <input class= "p-1 w-full" type="number" min="0" name="2-liter-qty"/></label>
-      </div>
-    </div>
-    <div class="grid content-start border-2 border-organic-500 rounded shadow-lg  py-4 px-16" style="grid-template-rows: 1fr 2fr 1fr 1fr">
-      <h2 class="text-center">Go Organic Guano Liquid 25 Liter</h2>
-      <div  class="leading-8">A 25 litre jerrycan of Go Organic Guano makes a 1,000 litres of plant food that covers 1 hectare (1:40 dilute) </div>
-      <div class="text-2xl  font-semibold grid justify-center">
-        <div class="text-center bg-organic-500 text-white rounded-full w-20 h-20 pt-6">R150</div>
+  <section>
+    <div>
+      <h2 >Go Organic Guano Liquid</h2>
+      <div >A handy 2 litre bottle makes 80 litres of plant food which covers 800 m2.</div>
+      <div class="products">
+        <div class="product-card">
+          <div>1 Lt Bottle (min 20 bottles)</div>
+          <div>R30</div>
+          <div>
+            <label>Quantity: <input type="number" min="0" name="2-liter-qty"/></label>
+          </div>
+        </div>
+        <div class="product-card">
+          <div>2 Lt Cans (min 10 cans)</div>
+          <div>R50</div>
+          <div>
+            <label>Quantity: <input type="number" min="0" name="2-liter-qty"/></label>
+          </div>
+        </div>
+        <div class="product-card">
+          <div>5 Lt Agri Cans (min 5 cans)</div>
+          <div>R100</div>
+          <div>
+            <label>Quantity: <input type="number" min="0" name="2-liter-qty"/></label>
+          </div>
+        </div>
+        <div class="product-card">
+          <div>25 Lt Cans</div>
+          <div>R450</div>
+          <div>
+            <label>Quantity: <input type="number" min="0" name="25-liter-qty"/></label>
+          </div>
+        </div>
+        <div class="product-card">
+          <div>1000 Lt Flow Bins</div>
+          <div >R15,000</div>
+          <div>
+            <label>Quantity: <input type="number" min="0" name="25-liter-qty"/></label>
+          </div>
+        </div>
       </div>
       <div>
-        <label>Quantity: <input class= "p-1 w-full" type="number" min="0" name="25-liter-qty"/></label>
-      </div>
-    </div>
-    <div class="grid content-start border-2 border-organic-500 rounded shadow-lg py-4 px-16" style="grid-template-rows: 1fr 2fr 1fr 1fr">
-      <h2 class="text-center">Go Organic Seabird Guano Tablets</h2>
-      <div  class="leading-8">A 10-tablet tube that can feed up to 10 tree's</div>
-      <div class="text-2xl font-semibold grid justify-center">
-        <div class="text-center bg-organic-500 text-white rounded-full w-20 h-20 pt-6">R100</div>
-      </div>
-      <div >
-        <label>Quantity: <input class= "p-1 w-full" type="number" min="0" name="tablets-qty"/></label>
+        <h2>Go Organic Seabird Guano Tablets</h2>
+        <div>A 10-tablet tube that can feed up to 10 tree's</div>
+        <div class="products">
+          <div class="product-card">
+            <div>25gr Tablet (min 250)</div>
+            <div>R3.50</div>
+            <div>
+              <label>Quantity: <input type="number" min="0" name="2-liter-qty"/></label>
+            </div>
+          </div>
+          <div class="product-card">
+            <div>Tube of 10</div>
+            <div>R65</div>
+            <div>
+              <label>Quantity: <input type="number" min="0" name="2-liter-qty"/></label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <p class="px-16 py-2 leading-7">
-    <label>Your Name <input class= "p-1 w-full" type="text" name="name" required/></label>
-  </p>
-  <p class="px-16 py-2 leading-7">
-    <label>Your Email <input class= "p-1 w-full" type="email" name="email"/></label>
-  </p>
-  <p class="px-16 py-2 leading-7">
-    <label>Your Phone <input class= "p-1 w-full" type="phone" name="phone" required/></label>
-  </p>
-  <p class="px-16 py-2 leading-7">
-    <label>Message <textarea class= "p-1 w-full" name="message"></textarea>
-    </label>
-  </p>
-  <p class="px-16 py-2 leading-7">
+  <h2>Your Details</h2>
+  <section class="user-form">    
+    <div class="user-form-field">
+      <label>Your Name </label>
+      <input type="text" name="name" required/>
+    </div>
+    <div class="user-form-field">
+      <label>Your Email </label>
+      <input type="email" name="email"/>
+    </div>
+    <div class="user-form-field">
+      <label>Your Phone</label>
+      <input type="phone" name="phone" required/>
+    </div>
+    <div class="user-form-field">
+      <label>Message</label>
+      <textarea name="message" rows="4"></textarea>
+    </div>
+    <p>
     Courier services will be calculated once the order is processed. One of our sales team will get in touch and finalize the details total cost.
-  </p>
-  <p class="px-16 py-2 leading-7">
-    <button class="bg-organic-500 hover:bg-organic-700 text-white font-bold py-2 px-4 rounded" type="submit">Order</button>
-  </p>
+  </p>    
+  </section>
+  <button type="submit">Order</button>
 </form>
