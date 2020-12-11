@@ -112,9 +112,6 @@ main .content {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.3s ease-out;
-}
-
-.banner-header:hover > .banner-header-highlight {
   visibility: visible;
   opacity: 1;
 }
@@ -197,10 +194,9 @@ ul {
 
 .user-form-field {
   display: grid;
-  
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   margin: 0 auto;
 }
 
