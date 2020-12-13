@@ -34,7 +34,7 @@ main .content {
   justify-self: center;
   line-height: 1.75;
   padding-top: 1rem;
-  width: 100%;
+  width: 90vw;
 }
 
 .navigation-div {
@@ -173,15 +173,12 @@ ul {
 .products {
   border: 1px solid hsla(143, 46%, 19%, 1);
   padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   border-radius: 1rem;
 }
 
 .product-card {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .user-form {
@@ -189,7 +186,6 @@ ul {
   border: 1px solid hsla(143, 46%, 19%, 1);
   border-radius: 1rem;
   padding: 1rem;
-  width: 50%;
 }
 
 .user-form-field {
@@ -259,6 +255,28 @@ footer {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
+  }
+
+  .products {
+    border: 1px solid hsla(143, 46%, 19%, 1);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+
+  .product-card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .user-form {
+    display: grid;
+    border: 1px solid hsla(143, 46%, 19%, 1);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 50%;
   }
 
   footer {
