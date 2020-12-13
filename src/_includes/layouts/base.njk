@@ -8,22 +8,53 @@
         </title>
         <meta name="Description" content=""/>
         <base href="/">
-        <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FRVNB8CCG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-6FRVNB8CCG');
+        </script>
+        {# <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/> #}
     </head>
 
-    <body class="bg-organic-500 font-serif">
+    {# <body class="bg-organic-500 font-serif">
         <header class="bg-organic-200">
             <img class="p-6 w-2/3 mx-auto" src="/assets/img/banner.png" alt="Go Organics">
             <div class="bg-organic-500 p-2 text-organic-200 uppercase">
-                <div class="p-6 w-2/3 mx-auto grid grid-flow-col justify-items-center">
-                    {%- for nav in collections.nav -%}
-                        <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a><br/>
-                    {%- endfor -%}
-                </div>
+                <div class="p-6 w-2/3 mx-auto grid md:grid-flow-col justify-items-center">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> #}
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/super-form-reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="navigation-div">
+            <div class="logo"><img class="icon" src="assets/img/icon.png" alt="Icon"/>
+                <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
             </div>
-        </header>
-        <main class="container mx-auto bg-gray-200">
-            {{ content | safe }}
-        </main>
-    </body>
+            <div class="nav-items">
+                {%- for nav in collections.nav -%}
+                    <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+                {%- endfor -%}
+            </div>
+        </div>
+        <div class="content">{{ content | safe }}</div>
+    </main>
+    <footer>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@goorganicguano.co.za">info@goorganicguano.co.za</a>
+        </p>
+        <p>
+            <strong>Customer care:</strong>
+            <span>079-630-5841</span> or <span>082-418-8672</span></p>
+    </footer>
+</body>
 </html>
