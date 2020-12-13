@@ -263,6 +263,13 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
+    
+  }
+
+  .shadow {
+    box-shadow: 
+    0.3rem 0.3rem 1rem hsla(143, 46%, 19%, 0.2),
+    0.5rem 0.5rem 1rem hsla(143, 46%, 19%, 0.3);
   }
 
   .product-card {
