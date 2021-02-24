@@ -1,30 +1,41 @@
 ---
 title: Go Organic
-layout: layouts/home.njk
+layout: layouts/base.njk
 tags:
   - nav
 navtitle: Home
 date: 2000-01-01
 ---
-<div class="banner-image-div">
-  {# src="assets/img/person holding green grass.jpg" #}
-  <img class="banner-image" src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_1024,dpr_auto/v1611767549/website/penguin-portrait_epu8qv.jpg" alt="Banner Image"/>
-</div>
-<div class="gradient"></div>
-<div class="banner-text-div">
-  <span class="banner-text">
-    <div >
-      <img class="banner-icon" src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_200,dpr_auto/v1611767547/website/icon_m9th3h.png" alt="Icon"/>
-      <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
-      <p class="banner-body-text">natural seabird guano</p>
-      <p>The original seabird guano since 2009</p>
-      <p class="banner-btn">
-        <a class="banner-btn-item" href="#fact-sheet">Learn more</a>
-      </p>
-    </div>
-  </span>
-</div>
-<section id="fact-sheet">
+<section class="hero">
+  <div class="hero-image-div">
+    {# src="assets/img/person holding green grass.jpg" #}
+
+    <img class="hero-image" 
+    srcset="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_480,dpr_auto/v1611767549/website/penguin-portrait_epu8qv.jpg 480w,
+             https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_800,dpr_auto/v1611767549/website/penguin-portrait_epu8qv.jpg 800w,
+             https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_1024,dpr_auto/v1611767549/website/penguin-portrait_epu8qv.jpg 1024w"
+     sizes="(max-width: 600px) 480px,
+            (max-width: 800px) 800px
+            1024px"    
+    src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_1024,dpr_auto/v1611767549/website/penguin-portrait_epu8qv.jpg"
+     alt="Banner Image"/>
+  </div>
+  <div class="hero-gradient"></div>
+  <div class="hero-banner-text-div">
+    <span class="hero-banner-text">
+      <div>
+        <img class="hero-icon" src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_200,dpr_auto/v1611767547/website/icon_m9th3h.png" alt="Icon"/>
+        <h1 class="hero-header">go organic<span class="hero-header-highlight" aria-hidden="true">go organic</span></h1>
+        <p class="banner-body-text">natural seabird guano</p>
+        <p>The original seabird guano since 2009</p>
+        <p class="banner-btn">
+          <a class="banner-btn-item" href="#fact-sheet">Learn more</a>
+        </p>
+      </div>
+    </span>
+  </div>
+</section>
+<section id="fact-sheet" class="content">
   <h2>Go Organic Guano Facts</h2>
   <ul>
     <li>Seabird Guano is one of the most comprehensive organic fertilizers in the world</li>
@@ -55,4 +66,34 @@ date: 2000-01-01
     <li>Go Organic Guano contains lots of vitamins and minerals from the birds diet and most of the  	goodness in the guano comes from the fish  bones the bird eats</li>
   </ul>
 
+</section>
+
+<section class="content">
+  <form name="info" method="POST" data-netlify="true">
+    <h2>Contact Us</h2>
+    <section class="user-form shadow">
+      <div class="user-form-field">
+        <label>Your Name </label>
+        <input type="text" name="name" required/>
+      </div>
+      <div class="user-form-field">
+        <label>Your Email </label>
+        <input type="email" name="email"/>
+      </div>
+      <div class="user-form-field">
+        <label>Your Phone</label>
+        <input type="phone" name="phone" required/>
+      </div>
+      <div class="user-form-field">
+        <label>Message</label>
+        <textarea name="message" rows="4"></textarea>
+      </div>
+      <div >
+        <input type="checkbox" name="join" id="join">
+        <label>Join our mailing list </label>
+      </div>
+    </p>
+  </section>
+  <button type="submit" class="shadow">Submit</button>
+</form>
 </section>
