@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="The best organic fertilizer in South Africa using bird guano" />
+        <meta name="description" content="The best organic fertilizer in South Africa using bird guano"/>
         <title>
             {{ renderData.title or title or metadata.title}}
         </title>
@@ -20,41 +20,33 @@
 
             gtag('config', 'G-6FRVNB8CCG');
         </script>
-        {# <link rel="stylesheet" type="text/css" href="/assets/css/tailwind.css"/> #}
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/super-form-reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 
-    {# <body class="bg-organic-500 font-serif">
-        <header class="bg-organic-200">
-            <img class="p-6 w-2/3 mx-auto" src="/assets/img/banner.png" alt="Go Organics">
-            <div class="bg-organic-500 p-2 text-organic-200 uppercase">
-                <div class="p-6 w-2/3 mx-auto grid md:grid-flow-col justify-items-center">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> #}
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/super-form-reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-    <main>
-        <div class="navigation-div">
-            <div class="logo"><img class="icon" src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_auto,dpr_auto/v1611767547/website/icon_m9th3h.png" alt="Icon"/>
-                <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
+    <body>
+        <main>
+            <div class="navigation-div">
+                <div class="logo"><img class="icon" loading="lazy" decoding="async" src="https://res.cloudinary.com/goorganicguano/image/upload/f_auto,q_auto,c_scale,w_auto,dpr_auto/v1611767547/website/icon_m9th3h.png" alt="Icon"/>
+                    <h1 class="banner-header">go organic<span class="banner-header-highlight" aria-hidden="true">go organic</span></h1>
+                </div>
+                <div class="nav-items">
+                    {%- for nav in collections.nav -%}
+                        <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
+                    {%- endfor -%}
+                </div>
             </div>
-            <div class="nav-items">
-                {%- for nav in collections.nav -%}
-                    <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a>
-                {%- endfor -%}
-            </div>
-        </div>
-        <div class="content">{{ content | safe }}</div>
-    </main>
-    <footer>
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:info@goorganicguano.co.za">info@goorganicguano.co.za</a>
-        </p>
-        <p>
-            <strong>Customer care:</strong>
-            <span>079-630-5841</span> or <span>082-418-8672</span></p>
-    </footer>
-</body>
+            <div class="content">{{ content | safe }}</div>
+        </main>
+        <footer>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@goorganicguano.co.za">info@goorganicguano.co.za</a>
+            </p>
+            <p>
+                <strong>Customer care:</strong>
+                <span>079-630-5841</span> or <span>082-418-8672</span></p>
+        </footer>
+    </body>
 </html>
